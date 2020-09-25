@@ -1,0 +1,6 @@
+#
+# One item per line, comments at beginning of line and line breaks are allowed
+# wildcard are case-insensitive eg.: '*.xmp' or '*.XMP' are equivalent 
+#
+.DS_Store
+*.XMP

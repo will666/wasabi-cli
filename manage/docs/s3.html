@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module s3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>s3</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/will/Code/liamvalentin.com-functions/manage/src/s3.py">/Users/will/Code/liamvalentin.com-functions/manage/src/s3.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="boto3.html">boto3</a><br>
+<a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="subprocess.html">subprocess</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-create_s3_bucket"><strong>create_s3_bucket</strong></a>(bucket_name: str = 'liamvalentin.com-test', aws_region: str = 'us-west-2') -&gt; bool</dt><dd><tt>Create&nbsp;the&nbsp;S3&nbsp;bucket&nbsp;of&nbsp;the&nbsp;project</tt></dd></dl>
+ <dl><dt><a name="-get_s3_files"><strong>get_s3_files</strong></a>(bucket_name: str = 'liamvalentin.com-test', save_to_disk: bool = True, files_list_path: str = '../data', files_list_filename: str = 's3_media_list.txt', aws_region: str = 'us-west-2') -&gt; list</dt><dd><tt>Get&nbsp;S3&nbsp;objects&nbsp;and&nbsp;creates&nbsp;list</tt></dd></dl>
+ <dl><dt><a name="-media_sync"><strong>media_sync</strong></a>(local_path: str = '/Volumes/2TO/tmp/output', bucket_name: str = 'liamvalentin.com-test', remote_path_prefix: str = 'assets/images', log_path: str = '../logs', aws_region: str = 'us-west-2') -&gt; bool</dt><dd><tt>Synchronize&nbsp;local/S3&nbsp;media&nbsp;files&nbsp;tree</tt></dd></dl>
+ <dl><dt><a name="-s3_clean"><strong>s3_clean</strong></a>(bucket_name: str = 'liamvalentin.com-test', aws_region: str = 'us-west-2') -&gt; bool</dt><dd><tt>Delete&nbsp;imcomplete&nbsp;multi-part&nbsp;uploads</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>AWS_REGION</strong> = 'us-west-2'<br>
+<strong>BUCKET_NAME</strong> = 'liamvalentin.com-test'<br>
+<strong>FILES_LIST_FILENAME</strong> = 's3_media_list.txt'<br>
+<strong>FILES_LIST_PATH</strong> = '../data'<br>
+<strong>LOCAL_MEDIA_OUTPUT_PATH</strong> = '/Volumes/2TO/tmp/output'<br>
+<strong>LOG_PATH</strong> = '../logs'<br>
+<strong>S3_PREFIX</strong> = 'assets/images'<br>
+<strong>logger</strong> = &lt;Logger init (DEBUG)&gt;<br>
+<strong>statistics</strong> = []</td></tr></table>
+</body></html>

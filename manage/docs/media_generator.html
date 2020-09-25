@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module media_generator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>media_generator</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/will/Code/liamvalentin.com-functions/manage/src/media_generator.py">/Users/will/Code/liamvalentin.com-functions/manage/src/media_generator.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="PIL.Image.html">PIL.Image</a><br>
+<a href="constants.html">constants</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="shutil.html">shutil</a><br>
+<a href="subprocess.html">subprocess</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-media_generate"><strong>media_generate</strong></a>(media: str = None, output_path: str = None, media_ts: str = None, output_image_width: int = None, output_image_height: int = None, processed_files_count: int = None, unprocessed_files: list = None, video_encode: str = 'True', log_path: str = '../logs') -&gt; list</dt><dd><tt>invoked&nbsp;by&nbsp;build_media_files_from_list()&nbsp;-&nbsp;gemerates&nbsp;media&nbsp;files</tt></dd></dl>
+ <dl><dt><a name="-video_encoder"><strong>video_encoder</strong></a>(media: str = None, ts: str = None, output_path: str = None, log_path: str = '../logs', video_preset_data: dict = {'web': {'webm': {'format': 'webm', 'vcodec': 'libvpx-vp9', 'video_bitrate': '1000K', 'acodec': 'libvorbis', 'audio_bitrate': '64K'}, 'mp4': {'format': 'mp4', 'vcodec': 'h264', 'video_bitrate': '1000K', 'acodec': 'aac', 'audio_bitrate': '64K'}}, 'hq': {'mp4': {'format': 'mp4', 'vcodec': 'h264', 'video_bitrate': '8000K', 'acodec': 'aac', 'audio_bitrate': '256K'}, 'mov': {'format': 'mp4', 'vcodec': 'libx264', 'video_bitrate': '10000K', 'acodec': 'aac', 'audio_bitrate': '256K'}}, 'edge': {'mp4': {'format': 'mp4', 'vcodec': 'libx265', 'video_bitrate': '2600K', 'acodec': 'aac', 'audio_bitrate': '256K'}}}, media_presets: str = 'web.mp4', encoder_threads: int = 4) -&gt; bool</dt><dd><tt>Encode&nbsp;video&nbsp;media&nbsp;based&nbsp;on&nbsp;preset</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>logger</strong> = &lt;Logger init (DEBUG)&gt;<br>
+<strong>statistics</strong> = []<br>
+<strong>video_preset_data</strong> = {'edge': {'mp4': {'acodec': 'aac', 'audio_bitrate': '256K', 'format': 'mp4', 'vcodec': 'libx265', 'video_bitrate': '2600K'}}, 'hq': {'mov': {'acodec': 'aac', 'audio_bitrate': '256K', 'format': 'mp4', 'vcodec': 'libx264', 'video_bitrate': '10000K'}, 'mp4': {'acodec': 'aac', 'audio_bitrate': '256K', 'format': 'mp4', 'vcodec': 'h264', 'video_bitrate': '8000K'}}, 'web': {'mp4': {'acodec': 'aac', 'audio_bitrate': '64K', 'format': 'mp4', 'vcodec': 'h264', 'video_bitrate': '1000K'}, 'webm': {'acodec': 'libvorbis', 'audio_bitrate': '64K', 'format': 'webm', 'vcodec': 'libvpx-vp9', 'video_bitrate': '1000K'}}}</td></tr></table>
+</body></html>

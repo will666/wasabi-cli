@@ -1,0 +1,9 @@
+#
+# One item per line, comments at beginning of line and line breaks are allowed 
+#
+.DS_Store
+Spotlight-V100
+Thumbs.db
+ehthumbs.db
+Trashes
+Trash

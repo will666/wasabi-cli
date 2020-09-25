@@ -1,0 +1,43 @@
+{
+    "web": {
+        "webm": {
+            "format": "webm",
+            "vcodec": "libvpx-vp9",
+            "video_bitrate": "1000K",
+            "acodec": "libvorbis",
+            "audio_bitrate": "64K"
+        },
+        "mp4": {
+            "format": "mp4",
+            "vcodec": "h264",
+            "video_bitrate": "1000K",
+            "acodec": "aac",
+            "audio_bitrate": "64K"
+        }
+    },
+    "hq": {
+        "mp4": {
+            "format": "mp4",
+            "vcodec": "h264",
+            "video_bitrate": "8000K",
+            "acodec": "aac",
+            "audio_bitrate": "256K"
+        },
+        "mov": {
+            "format": "mp4",
+            "vcodec": "libx264",
+            "video_bitrate": "10000K",
+            "acodec": "aac",
+            "audio_bitrate": "256K"
+        }
+    },
+    "edge": {
+        "mp4": {
+            "format": "mp4",
+            "vcodec": "libx265",
+            "video_bitrate": "2600K",
+            "acodec": "aac",
+            "audio_bitrate": "256K"
+        }
+    }
+}
