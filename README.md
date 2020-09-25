@@ -7,7 +7,8 @@ The app is composed of 4 modules that can run independently but using the [CLI](
 Each module holds its own `Pipfile` and python3 environment.
 
 ## Root Installation (optional)
-The environment at the root directory is dedicated to code formatting and is optional.
+The Pipenv file at the root directory is dedicated to code formatting support and is optional.
+
 ```shell
 pipenv --three
 pipenv shell
@@ -15,7 +16,9 @@ pipenv install --dev
 pipenv run dev-setup
 ```
 
-## Per project installation
+Command `dev-setup`: setup git pre-commit hook, more information [there](https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/).
+
+## Per module installation
 > NOTE: exit active virtual environment to achieve per module install.
 
 ```shell
@@ -34,6 +37,7 @@ python3 cli.py
 ```
 
 Core [manage](manage) module can be used as a standalone app:
+
 ```shell
 cd manage/src
 python3 main.py
@@ -41,6 +45,7 @@ python3 main.py
 
 ## Build Lambda layer and deploy to S3
 The layer will be uploaded to S3 as specified in [config.py](lambda/layer/ffmpeg/config.py) file.
+
 ```shell
 cd lambda/layer/ffmpeg
 python3 build.py
